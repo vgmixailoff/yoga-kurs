@@ -14,22 +14,27 @@
       padding: 0;
       background: linear-gradient(180deg, #f0f4f8 0%, #ffffff 100%);
       color: #2c3e50;
-    }
-    header, section {
-      padding: 20px;
-      max-width: 960px;
-      margin: auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
     header {
+      width: 100%;
       background: white;
       text-align: center;
       border-bottom: 1px solid #e0e0e0;
       box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+      padding: 20px;
     }
-    h1 {
+    header h1 {
       font-size: 2em;
       font-weight: 700;
       margin-bottom: 0.5em;
+    }
+    section {
+      width: 100%;
+      max-width: 960px;
+      padding: 20px;
     }
     h2 {
       font-size: 1.4em;
@@ -87,10 +92,10 @@
       color: #1565C0;
     }
     @media (max-width: 600px) {
-      h1 {
+      header h1 {
         font-size: 1.5em;
       }
-      .course, header, section {
+      section {
         padding: 16px;
       }
     }
@@ -248,5 +253,3 @@
       <p>Да, особенно в курсах от Нетологии и IRS Academy.</p>
     </details>
   </section>
-</body>
-</html>
