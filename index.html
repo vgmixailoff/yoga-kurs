@@ -1,0 +1,110 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Лучшие курсы по йоге для начинающих онлайн">
+    <meta name="keywords" content="йога, курсы йоги, йога для начинающих, онлайн курсы йоги">
+    <title>Лучшие курсы по йоге для начинающих онлайн</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        header {
+            background: #f4f4f4;
+            padding: 20px 0;
+            text-align: center;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        .course {
+            background: #fff;
+            margin: 20px 0;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .rating {
+            color: gold;
+            font-size: 20px;
+        }
+        .faq-item {
+            margin: 10px 0;
+        }
+        .faq-question {
+            background: #f4f4f4;
+            padding: 10px;
+            border: none;
+            text-align: left;
+            cursor: pointer;
+            width: 100%;
+        }
+        .faq-answer {
+            padding: 10px;
+            display: none;
+        }
+        button {
+            background: #333;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+        @media (max-width: 768px) {
+            .container {
+                width: 95%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Лучшие курсы по йоге для начинающих онлайн</h1>
+        </div>
+    </header>
+    <div class="container">
+        <div class="course">
+            <h2>«Йога для начинающих» – Нетология</h2>
+            <div class="rating">★★★★☆ (4.8)</div>
+            <p><strong>Описание:</strong> Месячный курс, 2–3 занятия в неделю. Включает видеоуроки, вебинары, домашние задания с обратной связью и выдачей сертификата.</p>
+            <p><strong>Преимущества:</strong> Гибкий график, обратная связь от преподавателей, сертификат по окончании.</p>
+            <p><strong>Основные услуги:</strong> Видеоуроки, вебинары, домашние задания.</p>
+            <button>Записаться на курс</button>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question" onclick="toggleAnswer('answer1')">Что такое йога?</button>
+            <div id="answer1" class="faq-answer">
+                <p>Йога — это древняя практика, которая включает в себя физические упражнения, дыхательные техники и медитацию для улучшения физического и психического здоровья.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question" onclick="toggleAnswer('answer2')">Как часто нужно заниматься йогой?</button>
+            <div id="answer2" class="faq-answer">
+                <p>Для начинающих рекомендуется заниматься йогой 2–3 раза в неделю, чтобы увидеть улучшения в гибкости, силе и общем самочувствии.</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function toggleAnswer(id) {
+            const answer = document.getElementById(id);
+            if (answer.style.display === "block") {
+                answer.style.display = "none";
+            } else {
+                answer.style.display = "block";
+            }
+        }
+    </script>
+</body>
+</html>
